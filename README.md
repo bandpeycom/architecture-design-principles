@@ -21,3 +21,17 @@ Every software system has a structure, whether that structure is meticulously pl
 - Integration and Constraints: The HLD should make clear not only how these components fit together to fulfill the system's functional requirements but also outline what the system does not or should not do, marking the project's boundaries and limitations.
 
 By focusing on the high-level design early on, we create a solid foundation that guides the development process, ensuring that when it comes time to make detailed decisions, they’re informed by a clear understanding of the system as a whole, not just immediate needs or current preferences.
+
+### Levels of Abstraction in Architecture
+
+In the architecture of software systems, we deal with multiple layers of abstraction.
+
+- Lowest Level: At the ground floor, we're talking about classes, functions, and the nitty-gritty of object interactions, all shaped by the choice of programming language. It's here where the micro details of coding practices live.
+
+- Mid-Level: Moving up, we encounter modules, packages, and libraries, along with the rules of engagement for how these elements interact. It's a bit like organizing departments within a company so they communicate and collaborate efficiently.
+
+> Modern software architecture tends to zoom out from these granular details. The shift towards agile development means lengthy upfront design phases clash with the need for speed and flexibility. Instead of meticulously planning every class and function, we enforce structure through coding guidelines, DevOps practices, linting, and code reviews. It's less about drafting every detail on paper and more about setting up a system that guides developers towards best practices.
+
+- High-Level Abstraction: For large-scale systems, our focus shifts to an even broader view: services and how they interact in a distributed, multi-service ecosystem. Here, components are entire processes or groups of processes, potentially running on different machines. This approach equips us to build systems capable of handling immense loads, processing and storing vast amounts of data, and serving millions of users daily. Think ride-sharing apps, video games, investment platforms, social media, and so on.
+
+Getting the architecture "future-proof" means scaling from a small proof of concept (PoC) or minimum viable product (MVP) to a fully-fledged product without needing to overhaul everything. A well-thought-out design can save months of engineering effort, avoid building a system that falls short of requirements, and prevent the costly process of re-architecting a system bogged down by years of technical debt. The stakes couldn't be higher: nail the architecture, and you pave the way for scalable, robust development; miss the mark, and you're looking at significant setbacks.
