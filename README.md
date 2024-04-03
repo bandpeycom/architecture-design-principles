@@ -5,3 +5,19 @@ This guide serves as a comprehensive framework for engineering excellence, outli
 ## Motivation
 
 Every software system has a structure, whether that structure is meticulously planned or evolves in a chaotic manner. The longer we spend building a software system, the more challenging it becomes to alter its architecture down the line. This architecture not only defines the system's purpose and its operational quality but also deeply influences its performance and scalability, the ease of integrating new features, and its resilience against failures and security breaches. A suboptimal organization of our software can lead to steep costs for redesigns. Too many software projects start as proof of concepts (PoCs) without a forward-thinking architectural plan, setting the stage for a host of problems. It's high time we recognize that neglecting the architecture of our software in the early stages can corner us into expensive and time-consuming overhauls later on. Let's not fall into that trap.
+
+## Definition
+
+> Software architecture is essentially a blueprint of a system. It sketches out the high-level structure, pinpointing various components and detailing how they interact to meet the system's requirements and constraints. Think of it as the skeleton of a building, outlining its essential support structure without getting bogged down in the specifics of which brand of nails or screws are used.
+
+- High-level Design (HLD): By high-level, we mean it's an abstraction layer that highlights the key components and their interactions, deliberately ignoring the nitty-gritty of implementation. It’s like looking at a map; you see the cities and the highways connecting them, not every house or streetlight.
+
+- Tech specifics: Normally, you won’t find details like which programming languages or technologies are used, or the nitty-gritty of API calls in the HLD. Those are reserved for the low-level design, which dives into the implementation details.
+
+- Purpose of HLD: The idea behind keeping the design high-level initially is to postpone locking in on specific technologies for as long as possible. This gives us flexibility and ensures that our choices are guided by the system's actual needs rather than a premature commitment to a particular stack.
+
+- Components: In software architecture, components are like black boxes defined by what they do (their behavior) and how they talk to other components (their APIs). These components might be complex systems in their own right, each with its own HLD and Low-Level Design (LLD).
+
+- Integration and Constraints: The HLD should make clear not only how these components fit together to fulfill the system's functional requirements but also outline what the system does not or should not do, marking the project's boundaries and limitations.
+
+By focusing on the high-level design early on, we create a solid foundation that guides the development process, ensuring that when it comes time to make detailed decisions, they’re informed by a clear understanding of the system as a whole, not just immediate needs or current preferences.
