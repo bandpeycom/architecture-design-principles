@@ -45,6 +45,8 @@ Getting the architecture "future-proof" means scaling from a small proof of conc
 
 Software development typically unfolds across four main phases: design, implementation, testing, and deployment. These phases are not linear; they are part of an iterative process that often requires going back and refining previous steps. Initially, this cycle produces a prototype, and subsequent iterations refine and expand upon the existing system, as illustrated in the diagram below.
 
+![](./images/diagrams.png)
+
 In this context, software architecture forms during the design phase and serves as a foundational blueprint for the implementation phase. Throughout this document, we focus primarily on the design phase, which explains why terms like "software architecture" and "system design" are used interchangeably here.
 
 It’s important to note that software architecture isn’t about achieving perfection on the first try. Instead, it's about adopting a systematic approach to evolve the system. This involves leveraging industry best practices and established design patterns to guide development, ensuring the architecture can adapt and improve over time.
